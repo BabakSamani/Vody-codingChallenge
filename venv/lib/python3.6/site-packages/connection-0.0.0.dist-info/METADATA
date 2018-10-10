@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: connection
+Version: 0.0.0
+Summary: checking network connection
+Home-page: https://github.com/looking-for-a-job/connection.py
+License: UNKNOWN
+Keywords: connection
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+Requires-Dist: public
+Requires-Dist: requests
+Requires-Dist: setuptools
+
+[![](https://img.shields.io/pypi/pyversions/connection.svg?longCache=True)](https://pypi.org/pypi/connection/)
+
+### Install
+```bash
+$ [sudo] pip install connection
+```
+
+### Examples
+```python
+>>> import connection
+>>> connection.check()
+True
+```
+
+timeout
+```python
+>>> connection.check(timeout=2)
+```
+
