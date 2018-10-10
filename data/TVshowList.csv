@@ -1,0 +1,751 @@
+title,year,rating,score,episodes
+The Simpsons,1989,7+,8.7,28
+Grey's Anatomy,2005,16+,7.6,27
+Law & Order: Special Victims Unit,1999,16+,8,435
+Family Guy,1999,16+,8.2,315
+Will & Grace,1998,16+,7.2,211
+Marvel's Agents of S.H.I.E.L.D.,2013,16+,7.5,5
+American Horror Story,2011,18+,8.1,84
+South Park,1997,18+,8.7,287
+Shameless,2011,18+,8.7,1
+Gotham,2014,16+,7.9,5
+Fear the Walking Dead,2015,18+,7,37
+CSI: Crime Scene Investigation,2000,16+,7.7,338
+Frasier,1993,7+,8.1,264
+Fresh Off the Boat,2015,7+,7.9,81
+Vikings,2013,18+,8.6,59
+Coronation Street,1960,7+,5.7,538
+American Dad!,2005,16+,7.4,284
+Blindspot,2015,16+,7.5,67
+Blue Bloods,2010,16+,7.5,177
+Fairy Tail,2009,16+,8.1,277
+Station 19,2018,16+,5.9,11
+Smallville,2001,7+,7.5,222
+Lost,2004,16+,8.4,122
+Survivor,2000,7+,7.1,498
+Pokémon,1997,7+,7.4,186
+Elementary,2012,16+,7.9,142
+Mom,2013,16+,7.2,88
+The Good Doctor,2017,16+,8.4,21
+Chicago Fire,2012,16+,7.9,7
+Modern Family,2009,16+,8.5,24
+Twin Peaks,1990,18+,8.9,31
+Lethal Weapon,2016,16+,8.1,43
+The Last Ship,2014,16+,7.5,46
+Bones,2005,16+,7.9,246
+Superstore,2015,16+,7.7,56
+Naruto Shippūden,2007,7+,8.4,499
+CSI: Miami,2002,16+,6.4,233
+Star Trek,1966,7+,8.3,79
+One Piece,1999,7+,8.6,807
+Homeland,2011,18+,8.4,59
+Beverly Hills,1990,7+,6.2,240
+How I Met Your Mother,2005,16+,8.3,209
+Sesame Street,1969,all,8.2,94
+Pretty Little Liars,2010,16+,7.5,1
+How to Get Away with Murder,2014,16+,8.2,7
+Star Trek: The Next Generation,1987,7+,8.6,176
+Seinfeld,1989,7+,8.9,172
+Adventure Time,2010,7+,8.6,63
+Lucifer,2016,16+,8.2,36
+This Is Us,2016,16+,8.8,38
+The X-Files,1993,16+,8.7,219
+America's Funniest Home Videos,1989,7+,6.2,51
+Prison Break,2005,16+,8.4,87
+Rugrats,1991,7+,7.5,188
+Full House,1987,all,6.7,192
+Empire,2015,16+,7.6,68
+Stargate SG-1,1997,7+,8.4,214
+Dexter,2006,18+,8.7,1
+Chicago P.D.,2014,16+,8.1,24
+Bob's Burgers,2011,16+,8.1,153
+Cheers,1982,7+,7.8,275
+The Gifted,2017,16+,7.6,16
+It's Always Sunny in Philadelphia,2005,18+,8.8,133
+My Hero Academia,2016,16+,8.4,63
+Scrubs,2001,7+,8.4,183
+Speechless,2016,7+,7.6,42
+Futurama,1999,16+,8.5,137
+Hell's Kitchen,2005,16+,7.1,127
+The Handmaid's Tale,2017,18+,8.6,23
+Mayday,2003,16+,8.9,2
+Dark Shadows,1966,N/A,7.6,530
+Once Upon a Time,2011,7+,7.8,22
+Chicago Med,2015,16+,7.5,22
+Saturday Night Live,1975,16+,8.1,398
+JoJo's Bizarre Adventure,2012,18+,8.3,113
+Rick and Morty,2013,18+,9.3,31
+The Middle,2009,7+,7.5,6
+Sword Art Online,2012,16+,7.7,50
+Sons of Anarchy,2008,18+,8.6,92
+Brooklyn Nine-Nine,2013,16+,8.4,112
+Scandal,2012,16+,7.8,5
+Keeping Up with the Kardashians,2007,16+,2.8,210
+Murdoch Mysteries,2008,7+,8.1,78
+WWE Raw,1993,7+,7.9,221
+New Girl,2011,16+,7.7,8
+The Voice,2011,7+,6.6,19
+Dragon Ball,1986,7+,8.6,161
+American Idol,2002,7+,4.2,19
+Dexter's Laboratory,1996,all,8,16
+Californication,2007,18+,8.3,84
+Manifest,2018,16+,7.8,3
+Ghost Adventures,2008,7+,7.7,73
+Community,2009,7+,8.5,110
+Last Man Standing,2011,16+,7.6,132
+Shark Tank,2009,7+,7.5,186
+Desperate Housewives,2004,7+,7.5,180
+Nashville,2012,7+,7.7,124
+Mystery Science Theater 3000,1988,7+,8.5,48
+Gravity Falls,2012,7+,8.9,40
+Bleach,2004,18+,8.2,639
+The Tonight Show Starring Jimmy Fallon,2014,16+,7.5,209
+30 Rock,2006,16+,8.2,137
+Ghost Whisperer,2005,7+,6.4,107
+The Good Wife,2009,16+,8.3,156
+Arrested Development,2003,16+,8.9,53
+Steven Universe,2013,7+,8.4,125
+The Orville,2017,16+,7.9,12
+InuYasha,2000,16+,7.9,193
+Buffy the Vampire Slayer,1997,7+,8.2,144
+Jeopardy!,1964,all,8.2,60
+The Good Place,2016,16+,8.1,7
+Case Closed,1996,16+,8.4,2
+M*A*S*H,1972,7+,8.4,256
+MythBusters,2003,7+,8.3,129
+One Tree Hill,2003,16+,7.7,187
+Regular Show,2010,7+,8.3,253
+Dancing with the Stars,2005,7+,4.7,9
+Black Sails,2014,18+,8.3,38
+Star Trek: Voyager,1995,7+,7.7,169
+Archer,2009,18+,8.7,93
+Fargo,2014,18+,9,30
+12 Monkeys,2015,16+,7.7,36
+Glee,2009,16+,6.7,121
+Stargate Atlantis,2004,7+,8.1,101
+The Amazing Race,2001,7+,7.6,339
+black-ish,2014,16+,7.1,95
+Battlestar Galactica,2004,16+,8.7,77
+Ray Donovan,2013,18+,8.3,1
+The Resident,2018,16+,7.2,17
+The Goldbergs,2013,7+,8.2,118
+Naruto,2002,7+,8.2,368
+9-1-1,2018,16+,7.5,13
+Project Runway,2004,16+,7.3,165
+Heartland,2007,7+,8.4,175
+The Affair,2014,18+,8,11
+Ancient Aliens,2010,7+,7.4,113
+The Big Valley,1965,N/A,7.7,30
+Designated Survivor,2016,16+,7.7,43
+Malcolm in the Middle,2000,7+,8,149
+MasterChef,2010,16+,7.3,106
+The Only Way Is Essex,2010,18+,3.1,258
+The Adventures of Jimmy Neutron: Boy Genius,2002,all,6.7,57
+Robot Chicken,2005,18+,7.8,163
+Airwolf,1984,7+,6.8,75
+Teen Titans Go!,2013,7+,4.9,145
+Star Trek: Enterprise,2001,7+,7.5,97
+Parks and Recreation,2009,16+,8.6,123
+The Strain,2014,18+,7.4,46
+Ranma,1989,16+,7.9,162
+Power,2014,18+,8.2,38
+Angel,1999,7+,8,110
+Sleepy Hollow,2013,16+,7.4,63
+The Rifleman,1958,7+,8.3,167
+Firefly,2002,16+,9,14
+Taken,2017,16+,6.7,15
+Whose Line Is It Anyway?,1998,7+,8.5,24
+The Powerpuff Girls,1998,7+,7.3,90
+This Old House,1979,N/A,7.8,130
+One-Punch Man,2015,18+,9,12
+The Shield,2002,18+,8.7,92
+Xena: Warrior Princess,1995,16+,6.7,134
+Miami Vice,1984,16+,7.5,92
+Marvel's Agent Carter,2015,7+,8,18
+Awkward.,2011,16+,7.6,90
+Fast N' Loud,2012,16+,7.6,87
+Sabrina  the Teenage Witch,1996,all,6.6,163
+Caillou,1998,all,4.2,10
+Hill Street Blues,1981,16+,8.1,146
+Star Trek: Deep Space Nine,1993,7+,7.9,173
+Hey Arnold!,1996,all,7.7,101
+My Name Is Earl,2005,16+,7.8,95
+The Incredible Hulk,1978,7+,6.9,65
+Numb3rs,2006,7+,6.9,118
+The Last Man on Earth,2015,16+,7.4,67
+The Golden Girls,1985,7+,7.9,180
+Lupin the Third,1971,18+,8,73
+Shadowhunters,2016,16+,6.6,43
+The Beverly Hillbillies,1962,all,7.2,55
+Popeye the Sailor,1960,all,7.1,1
+The Haves and the Have Nots,2013,N/A,6,129
+Star,2016,16+,6.7,32
+Watch What Happens: Live,2009,16+,5.8,58
+Fullmetal Alchemist: Brotherhood,2009,18+,9,64
+NYPD Blue,1993,18+,7.5,260
+Medium,2005,16+,7,131
+Animaniacs,1993,all,7.9,130
+Silent Witness,1996,16+,7.8,124
+Sailor Moon,1992,16+,7.7,200
+Legion,2017,18+,8.4,8
+Intervention,2005,16+,8,162
+Tokyo Ghoul,2014,18+,8,37
+The Amazing World of Gumball,2011,7+,8.2,74
+I Love Lucy,1951,all,8.4,102
+Gold Rush,2011,7+,7.2,112
+Ghost in the Shell: Stand Alone Complex,2002,16+,8.5,10
+Timeless,2016,7+,7.7,25
+Rizzoli & Isles,2010,16+,7.6,105
+Billions,2016,18+,8.4,1
+St. Elsewhere,1982,7+,7.9,137
+Alfred Hitchcock Presents,1955,16+,8.6,149
+The Librarians,2014,16+,7.3,42
+Happy Days,1974,7+,7.5,25
+Saving Hope,2012,16+,7.6,85
+Home Improvement,1991,all,7.2,203
+The O.C.,2003,7+,7.5,92
+Simon & Simon,1981,N/A,7.1,56
+Black Clover,2017,16+,7.7,78
+The Cleveland Show,2009,16+,5.6,88
+The Bridge,2011,18+,8.7,44
+Night Gallery,1970,7+,8,44
+Pawn Stars,2009,7+,7.2,247
+Blackadder,1983,7+,8.1,24
+Quantum Leap,1989,7+,8.1,97
+The IT Crowd,2006,16+,8.5,25
+Preacher,2016,18+,8.1,23
+Revenge,2011,16+,7.9,89
+Dawson's Creek,1998,16+,6.6,128
+Monogatari,2009,16+,8,28
+Ironside,1967,7+,7,80
+Offspring,2010,16+,8.2,65
+Gurren Lagann,2007,16+,8.3,27
+Digimon Adventure,1999,7+,7.3,203
+Deadliest Catch,2005,7+,8,122
+Harrow,2018,N/A,7.3,10
+Crayon Shin-chan,1992,7+,7.9,77
+Chopped,2009,all,7.5,161
+Total Divas,2013,16+,6.6,104
+Lie to Me,2009,16+,8,48
+Drake & Josh,2004,7+,7.7,48
+America's Got Talent,2006,7+,5.7,48
+The Mindy Project,2012,16+,7.4,118
+Louie,2010,18+,8.6,62
+The Thundermans,2013,all,5.8,100
+Shades of Blue,2016,16+,7,36
+America's Next Top Model,2003,7+,5.6,285
+Castle Rock,2018,18+,8.6,10
+Hunter x Hunter,2011,16+,8.7,96
+Curious George,2006,all,7.3,112
+A Certain Magical Index,2008,16+,7,48
+Spider-Man,1994,all,8.3,1
+The Real Housewives of Orange County,2006,16+,4,213
+Death Note,2006,18+,9,37
+Steins Gate,2011,16+,8.7,24
+Sister Wives,2010,16+,4.3,57
+Everybody Hates Chris,2005,7+,7.4,75
+Bering Sea Gold,2012,all,6.7,18
+Remington Steele,1982,7+,7.3,60
+High School DxD,2012,18+,7.8,49
+Taboo,2017,16+,8.5,7
+Hunter,1984,N/A,6.8,152
+Step by Step,1991,all,6.5,160
+Cowboy Bebop,1998,18+,8.9,26
+The Outer Limits,1963,7+,8.2,164
+Workaholics,2011,18+,8.1,86
+An Idiot Abroad,2010,16+,8.3,19
+The L Word,2004,18+,7.6,71
+Midnight  Texas,2017,16+,7.5,10
+The Twilight Zone,1959,7+,9,156
+Ben 10,2005,7+,7.1,49
+Garfield and Friends,1988,7+,7.3,152
+Marvel's Runaways,2017,16+,7.3,10
+Life Below Zero,2013,7+,8.1,93
+Melrose Place,1992,16+,3.8,221
+Everwood,2002,7+,7.5,89
+The View,1997,16+,2.9,156
+Life in Pieces,2015,7+,7.9,44
+Star vs. the Forces of Evil,2015,7+,8.1,73
+Mobile Suit Gundam SEED,2002,16+,7.8,48
+Foster's Home for Imaginary Friends,2004,7+,7.7,79
+Merlin,2008,7+,7.9,65
+Stitchers,2015,16+,7,31
+The Dick Van Dyke Show,1961,all,7,157
+The Curse of Oak Island,2014,7+,6.9,58
+The Venture Bros.,2004,18+,8.5,73
+Family Matters,1989,all,6.6,213
+Food Wars!: Shokugeki no Soma,2015,18+,8.3,37
+Rescue Me,2004,18+,8.4,93
+Doogie Howser  M.D.,1989,7+,6.5,97
+Peep Show,2003,18+,8.6,54
+Expedition Unknown,2015,7+,8.4,34
+Newhart,1982,all,7.8,19
+Siren,2018,16+,7.2,10
+Naked and Afraid,2013,16+,6.6,77
+The Practice,1997,16+,7.7,167
+ER,1994,16+,7.7,331
+Younger,2015,16+,7.8,60
+The Real Housewives of Beverly Hills,2010,16+,4.7,153
+SIX,2017,18+,7.3,8
+Shameless,2004,18+,8.1,138
+The Exorcist,2016,16+,8.2,20
+House Hunters International,2006,all,7.1,78
+The Fall Guy,1981,7+,7.1,23
+The Ultimate Fighter,2005,16+,7.9,27
+Felicity,1998,16+,6.8,85
+Sonic Boom,2014,7+,8,78
+LEGO Ninjago: Masters of Spinjitzu,2012,all,6.7,54
+The Saint,1962,7+,7.6,4
+Inside No. 9,2014,18+,8.4,12
+Mr. Bean,1990,all,8.5,15
+Durarara!!,2010,16+,8,61
+Over the Garden Wall,2014,7+,8.9,10
+Dinosaurs,1991,7+,7.5,32
+The Pink Panther Show,1964,all,7.7,123
+Lost in Space,1965,all,7.3,84
+Brickleberry,2012,18+,7.3,36
+Rurouni Kenshin,1996,16+,8.5,101
+Sliders,1995,7+,7.4,46
+Stargate Universe,2009,16+,7.7,40
+Parenthood,2010,7+,8.2,103
+Friday Night Lights,2006,7+,8.7,76
+So You Think You Can Dance,2005,7+,6.8,29
+Drunk History,2013,16+,7.8,57
+Taxi,1978,7+,7.7,79
+New Tricks,2003,16+,7.9,107
+Emerald City,2017,16+,7.3,10
+The Addams Family,1964,all,8,64
+Inspector Gadget,1983,7+,6.8,86
+Renegade,1992,N/A,6.1,118
+Rosewood,2015,16+,6.6,44
+Wayward Pines,2015,16+,7.5,20
+Unsolved Mysteries,1987,7+,8.4,208
+Doug,1991,all,7.5,53
+Catfish: The TV Show,2012,16+,7.2,93
+Street Outlaws,2013,7+,6.8,66
+Wings,1990,7+,7.3,150
+Party of Five,1994,7+,6.8,1
+Homicide Hunter: Lt Joe Kenda,2011,16+,8.9,82
+Brothers and Sisters,2006,16+,7.3,109
+Yu Yu Hakusho,1992,16+,8.4,74
+American Pickers,2010,7+,7,228
+Fear Factor,2001,7+,5.7,152
+The Bachelorette,2003,16+,3.2,5
+American Housewife,2016,7+,7.5,49
+Wilfred,2011,18+,7.8,49
+Aqua Teen Hunger Force,2000,18+,7.7,19
+Scream Queens,2015,16+,7.1,22
+Angie Tribeca,2016,16+,7,30
+Silk Stalkings,1991,16+,6.6,176
+Line of Duty,2012,18+,8.5,23
+Key & Peele,2012,18+,8.3,53
+The Real Housewives of Atlanta,2008,16+,4.2,210
+Storage Wars,2010,7+,6.4,101
+The Bold Type,2017,16+,8.1,20
+Salem,2014,18+,7.2,36
+24: Legacy,2017,16+,6.2,12
+Daria,1997,7+,8.1,65
+Highlander: The Series,1992,16+,7.3,120
+UnREAL,2015,18+,7.9,38
+The Next Step,2013,N/A,6.2,153
+The Brady Bunch,1969,all,6.7,91
+The Musketeers,2014,16+,7.8,30
+Roswell,1999,16+,7.5,61
+H2O: Just Add Water,2006,all,7.3,78
+The Boondocks,2005,18+,8.4,51
+The Game,2006,16+,6.9,148
+Vanderpump Rules,2013,16+,5.2,96
+Descendants of the Sun,2016,16+,8.5,16
+Made in Chelsea,2011,16+,4.7,172
+The Qwaser of Stigmata,2010,18+,5.4,36
+Alone,2015,16+,8.4,34
+Atlanta,2016,18+,8.6,10
+The Path,2016,18+,7.4,36
+X-Men,1992,7+,8.5,3
+Dollhouse,2009,16+,7.7,26
+Southland,2009,16+,8.4,43
+Celebrity Undercover Boss,2010,7+,5.9,101
+Kung Fu Panda: Legends of Awesomeness,2011,7+,0,52
+Don't Trust the B---- in Apartment 23,2012,16+,7.3,26
+We Bare Bears,2015,7+,8,2
+Dirk Gently's Holistic Detective Agency,2016,16+,8.4,18
+Boy Meets World,1993,all,8.1,158
+Blue Exorcist,2011,16+,7.6,38
+Spooks,2002,18+,8.3,87
+The Mary Tyler Moore Show,1970,7+,8.2,168
+Full Metal Panic!,2002,16+,7.7,36
+Graceland,2013,16+,7.7,38
+Dead Like Me,2003,16+,8.1,30
+Taggart,1983,18+,7.2,63
+Coupling,2000,7+,3.6,28
+The Little Couple,2009,all,6.9,16
+Sailor Moon Crystal,2014,16+,8,40
+Queen Sugar,2016,16+,7.5,29
+The Mick,2017,16+,7.9,37
+General Hospital,1963,7+,6.7,60
+Hollyoaks,1995,16+,5.1,715
+11.22.63,2016,18+,8.3,8
+Little Britain,2003,18+,7.7,20
+The League,2009,18+,8.3,84
+Cardfight!! Vanguard,2011,16+,7.3,66
+Harvey Birdman Attorney at Law,2000,16+,8,39
+Doc Martin,2004,7+,8.3,37
+Teenage Mutant Ninja Turtles,2012,7+,8,120
+Barefoot Contessa: Back to Basics,2002,all,7.5,7
+Ghosted,2017,7+,6.3,13
+Face Off,2011,7+,8.2,128
+A Million Little Things,2018,16+,7.4,2
+Haikyu!!,2014,16+,8.7,60
+Food Network Star,2005,7+,6.3,57
+Yu-Gi-Oh! Zexal,2011,7+,4.9,128
+Flashpoint,2008,16+,7.8,75
+Dance Moms,2011,7+,4.6,79
+The Penguins of Madagascar,2009,7+,7.6,64
+Private Practice,2007,16+,6.7,111
+The Unit,2006,7+,8.1,69
+The First 48,2004,18+,8.3,51
+Outsiders,2016,18+,7.6,26
+Ugly Betty,2006,7+,6.6,85
+The Rockford Files,1974,16+,8.1,67
+Vera,2011,7+,7.8,12
+Route 66,1960,N/A,7.7,93
+K.C. Undercover,2015,all,6.1,88
+Touch,2012,7+,7.4,26
+You're the Worst,2014,18+,8.2,49
+The Office,2001,16+,8.5,14
+Top Chef,2006,16+,7.6,217
+All Saints,1998,N/A,7,368
+Perception,2012,16+,7.5,39
+Misfits,2009,18+,8.3,37
+Property Brothers,2011,all,7.3,116
+Fixer Upper,2013,all,8.4,59
+Marvel's Cloak & Dagger,2018,16+,7,10
+Cougar Town,2009,7+,7,102
+Chance,2016,18+,7.7,20
+Your Lie in April,2014,7+,8.1,22
+Laverne & Shirley,1976,all,6.9,52
+Reba,2001,7+,6.5,127
+Weird Science,1994,N/A,6.8,76
+To Love-Ru,2008,18+,7,62
+Kyle XY,2006,7+,7.6,43
+My Favorite Martian,1963,all,7.4,67
+Diners  Drive-Ins and Dives,2007,all,7.4,70
+Good Luck Charlie,2010,all,7.1,104
+Dennis  The Menace,1959,all,7.2,146
+The Bachelor,2002,16+,3.1,2
+Metalocalypse,2006,18+,8.3,1
+DCI Banks,2011,18+,7.6,36
+Life,2007,16+,8.3,32
+Mister Ed,1961,all,7.1,52
+7th Heaven,1996,7+,5.2,243
+Good Girls,2018,16+,7.9,5
+The Heroic Legend of Arslan,2015,16+,7.7,26
+The First,2018,N/A,6.5,8
+I Spy,1965,N/A,7.2,82
+Uncle Grandpa,2013,7+,4.4,140
+Please Like Me,2013,16+,8.4,32
+Late Night with Seth Meyers,2014,16+,6.1,17
+Jimmy Kimmel Live!,2003,16+,6.8,210
+The Outer Limits,1995,18+,7.8,153
+Happy Endings,2011,16+,7.7,57
+The Cool Kids,2018,16+,6.8,1
+Legends,2014,16+,7.5,20
+Samurai Champloo,2004,18+,8.6,26
+The Glades,2010,16+,7.5,49
+Forensic Files,1996,16+,8.8,115
+Tiny Toon Adventures,1990,all,7.6,98
+The Real Housewives of New York City,2008,16+,4.1,174
+Legend of the Seeker,2008,16+,7.7,43
+Doc McStuffins,2012,all,6.7,144
+Famous in Love,2017,16+,7.1,20
+Meet the Press,1947,all,5.8,1
+Baskets,2016,18+,7.5,20
+Melissa & Joey,2010,7+,7,45
+The Bob Newhart Show,1972,all,8.1,72
+Primeval,2007,16+,7.3,36
+Tyler Perry's If Loving You Is Wrong,2014,16+,5.9,54
+Agatha Christie's Marple,2004,16+,7.8,23
+The Familiar of Zero,2006,16+,7.2,49
+Webster,1983,all,5.7,45
+Pride and Prejudice,1995,all,8.9,6
+Battlestar Galactica,1978,7+,7.1,13
+xxxHOLiC,2006,16+,7.8,24
+Beyond,2017,16+,7.2,20
+Elfen Lied,2004,18+,8.1,13
+Witches of East End,2013,16+,7.6,23
+Robin of Sherwood,1984,N/A,8.5,26
+Reverie,2018,16+,6.6,10
+Clannad,2007,7+,8,49
+Mushi-Shi,2005,16+,8.4,46
+WKRP in Cincinnati,1978,7+,8,22
+Dirty Sexy Money,2007,16+,7.3,23
+The Inbetweeners,2008,18+,8.3,18
+Tyrant,2014,18+,7.8,32
+X-Men: Evolution,2000,7+,7.9,1
+Wallander,2008,7+,7.6,6
+Log Horizon,2013,16+,7.8,51
+Alaskan Bush People,2014,16+,6.4,14
+Harlots,2017,18+,7.7,16
+Jersey Shore,2009,16+,3.6,73
+Moonlight Drawn by Clouds,2016,N/A,7.9,18
+Future Man,2017,N/A,N/A,13
+The Voice,2012,7+,5.6,28
+This Is Life with Lisa Ling,2014,N/A,7.6,24
+Deadbeat,2014,16+,7.5,36
+Attack on Titan,2013,16+,8.8,48
+Nicky  Ricky  Dicky & Dawn,2014,all,5.2,83
+Splitting Up Together,2018,7+,6.9,8
+Kill la Kill,2013,18+,8,24
+WWE NXT,2010,7+,7.6,181
+Top of the Lake,2013,16+,7.6,13
+Psycho-Pass,2012,16+,8.3,31
+Kamisama Kiss,2012,7+,8.1,25
+The PJs,1999,16+,6.6,44
+21 Jump Street,1987,7+,7.3,103
+Magi,2012,16+,8,50
+Marlon,2017,7+,6.9,5
+War and Peace,2016,16+,8.2,8
+Assassination Classroom,2015,16+,8,47
+Charles in Charge,1984,all,6.1,21
+Reaper,2007,16+,7.8,18
+Danny Phantom,2004,7+,7.1,49
+Devious Maids,2013,7+,7.8,49
+Sonic X,2003,7+,6.1,156
+Mary Kills People,2017,18+,7.4,12
+Bring It!,2014,7+,6.5,3
+Duck Dynasty,2012,7+,6.3,45
+Fate/Zero,2011,18+,8.3,13
+ERASED,2016,18+,8.5,12
+The Detour,2016,18+,7.8,22
+Broad City,2014,18+,8.4,40
+Trial & Error,2017,16+,8,17
+Tanked,2011,7+,6.7,52
+Black Butler,2008,16+,7.9,20
+The Profit,2013,7+,8.3,13
+The Bridge,2013,18+,7.6,26
+Perfect Strangers,1986,7+,7.3,133
+Akame ga Kill!,2014,18+,8,24
+Rin-ne,2015,16+,6.6,75
+Cutthroat Kitchen,2013,all,7.2,89
+Flip or Flop,2013,all,6.2,61
+Adam-12,1968,7+,7.6,86
+Manhattan,2014,16+,7.8,23
+Black Books,2000,7+,8.5,18
+Clannad After Story,2009,7+,8.6,24
+Girlfriends' Guide to Divorce,2014,16+,6.9,1
+The Prince of Tennis,2001,all,7.5,50
+Cold Case Files,1999,18+,8.2,19
+Anthony Bourdain: No Reservations,2005,7+,8.4,16
+Ask This Old House,2002,all,7.8,52
+FLCL,2000,18+,8.3,6
+Spaced,1999,18+,8.6,14
+Overlord,2015,18+,7.8,39
+The Dead Files,2011,7+,6.8,20
+Lou Grant,1977,7+,7.2,67
+Voyage to the Bottom of the Sea,1964,7+,7.2,59
+Forged in Fire,2015,7+,8.4,58
+Murder in the First,2014,18+,7.3,32
+Cardinal,2017,16+,7.7,12
+Faking It,2014,16+,7.4,38
+Finding Carter,2014,16+,7.6,36
+Yona of the Dawn,2014,16+,8.1,24
+Guilty Crown,2012,16+,7.3,22
+Boys Over Flowers,2009,16+,8.1,25
+The Looming Tower,2018,18+,8,10
+Saved by the Bell,1989,7+,7.1,110
+Flea Market Flip,2012,all,6.6,36
+Mobile Suit Gundam 00,2007,16+,8.2,50
+Real Humans,2012,16+,8,20
+Every Witch Way,2014,7+,4.8,80
+Invader Zim,2001,7+,8.3,36
+Rake,2010,16+,8.7,16
+Soul Eater,2008,16+,7.9,51
+The Commish,1991,16+,7.2,73
+Breakout Kings,2011,16+,7.3,23
+Blossom,1990,all,6,113
+Living Single,1993,7+,7.3,118
+Señora Acero,2014,16+,7.4,148
+Republic of Doyle,2010,16+,7.3,77
+River Monsters,2009,7+,8.2,19
+The Triangle,2005,16+,6.6,3
+Absolutely Fabulous,1992,16+,8.2,36
+The Event,2010,16+,7,22
+Mr. Pickles,2014,18+,7.4,21
+Big Time Rush,2009,all,6.2,53
+Claws,2017,18+,7.3,10
+My 600-lb Life,2012,7+,6.6,25
+Alias Smith and Jones,1971,7+,7.7,35
+Angels of Death,2018,18+,6.5,9
+Raising Hope,2010,16+,8,88
+Justice League Action,2016,7+,7.8,24
+The Catch,2016,16+,7.2,20
+Major Dad,1989,N/A,6.2,94
+Here's Lucy,1968,all,7.1,144
+Iron Chef America,2005,all,7.2,38
+That Girl,1966,7+,7.2,136
+20/20,1978,N/A,6.5,118
+Better Off Ted,2009,7+,8.2,26
+Deadly Women,2005,16+,8.1,91
+Hozuki's Coolheadedness,2014,N/A,8.7,4
+Clarence,2014,7+,6.5,12
+American Gothic,1995,N/A,8.2,22
+Mistresses,2013,16+,7.1,52
+Home Movies,1999,7+,8.2,53
+Good Behavior,2016,18+,8.2,20
+House Hunters,1999,all,8.3,130
+Maya & Miguel,2004,all,4.4,20
+Blood Blockade Battlefront,2015,18+,7.3,24
+Austin & Ally,2011,all,6,87
+Dance Academy,2010,16+,8.1,65
+Second Chance,2016,16+,7.6,11
+The Brave,2017,16+,7.5,13
+Leah Remini: Scientology and the Aftermath,2016,16+,9.2,23
+Penn & Teller: Bullshit!,2003,18+,8.2,87
+Basilisk,2005,18+,4.6,46
+Burning Love,2012,7+,8,21
+Darker than Black,2007,16+,7.8,12
+Resurrection,2014,16+,7.4,21
+Inside the NFL,1977,N/A,7,1
+Letterkenny,2016,7+,8.2,13
+Kitchen Nightmares,2007,16+,7.5,93
+Plebs,2013,16+,8,22
+Stella,2012,N/A,8,51
+Miles from Tomorrowland,2015,all,7,71
+Death Parade,2015,18+,8,12
+The Thick of It,2005,18+,8.7,25
+For The People,2018,16+,7,10
+Is It Wrong to Try to Pick Up Girls in a Dungeon?,2015,16+,7.5,13
+Demon King Daimao,2010,18+,7,12
+Sekirei,2008,18+,7.6,12
+Party Down,2009,18+,8.3,20
+Mysteries at the Museum,2010,7+,8.2,2
+Man vs. Wild,2006,7+,8.2,12
+The Lucy Show,1962,N/A,7.3,103
+D.Gray-man,2006,16+,7.8,51
+Better Things,2016,18+,7.7,20
+My Teen Romantic Comedy SNAFU,2013,16+,7.8,26
+Oreimo,2010,16+,6.6,25
+Monster Musume: Everyday Life with Monster Girls,2017,18+,6.7,12
+Noragami,2014,16+,8,25
+The Future Diary,2011,18+,7.8,26
+Wiseguy,1987,7+,7.9,68
+Little Women: LA,2014,16+,5.7,79
+Cold Squad,1998,16+,7,98
+The Biggest Loser,2004,7+,5.5,5
+Ellen,1994,7+,6.2,109
+Bakuman,2010,16+,8,75
+The Legend of the Blue Sea,2016,N/A,8.2,20
+Top Gear USA,2010,7+,5.3,82
+Parasyte -the maxim-,2014,18+,8.4,24
+Acapulco H.E.A.T.,1993,16+,6,1
+Celebrity Family Feud,2008,7+,6,15
+Underground,2016,18+,7.8,20
+Zero Hour,2013,16+,6.5,4
+Spiral,2005,7+,8.5,52
+Angry Birds Toons,2013,all,6.3,23
+Snapped,2004,7+,8,6
+United States of Tara,2009,18+,7.9,36
+Brotherhood,2006,18+,7.8,28
+Accel World,2012,16+,7.3,24
+Man Seeking Woman,2015,18+,7.7,30
+60 Days In,2016,16+,7.8,53
+Shakugan no Shana,2005,16+,7.3,72
+Friday Night Dinner,2011,18+,8,24
+Inside Amy Schumer,2013,18+,6.2,39
+Yu-Gi-Oh! GX,2004,all,6.7,155
+Highschool of the Dead,2010,18+,7.3,12
+Casual,2015,18+,7.6,44
+Hellsing,2001,16+,8,13
+Hoarders,2009,7+,6.4,74
+Mr. D,2012,N/A,6.5,25
+The Real O'Neals,2016,7+,7,29
+Body of Proof,2011,16+,7.1,42
+Puella Magi Madoka Magica,2011,16+,8.4,12
+Saving Grace,2007,18+,7.6,46
+Date a Live,2013,18+,7.2,22
+The Powerpuff Girls,2016,7+,3.6,1
+Speed Racer,1967,7+,7.2,52
+Naked and Afraid XL,2015,16+,7.4,9
+My Life as a Teenage Robot,2003,all,7.1,39
+Hunting Hitler,2015,7+,7.6,22
+Alone Together,2018,16+,6.2,20
+Black Lagoon,2006,18+,8.1,24
+Detectorists,2014,N/A,8.6,12
+W: Two Worlds,2016,N/A,8.4,16
+The League of Gentlemen,1999,18+,8.3,21
+I Feel Bad,2018,N/A,5.1,3
+The Incredible Dr. Pol,2011,7+,8.7,108
+Slayers,1995,7+,7.6,26
+Prison School,2015,18+,7.7,12
+Alaska: The Last Frontier,2011,16+,7.9,60
+Kojak,1973,16+,7.1,71
+Toddlers & Tiaras,2009,7+,1.8,27
+TRON: Uprising,2012,7+,8.2,19
+Worst Cooks in America,2010,all,6.4,36
+Lipstick Jungle,2008,16+,6.5,20
+Jane Eyre,2006,7+,8.4,2
+Kendra on Top,2012,7+,3.8,18
+The Invisible Man,2000,16+,8.9,46
+GATE,2015,16+,7.6,24
+Fate/stay night,2006,18+,7.5,49
+WWE SmackDown Live,1999,16+,7.3,243
+Blood Lad,2013,16+,7.3,10
+Rosario + Vampire,2008,18+,7.2,13
+Eli Stone,2008,7+,7.7,26
+Beyond the Boundary,2013,16+,7.4,12
+Aquarion,2005,18+,6.7,52
+Gavin & Stacey,2007,16+,8,20
+90 Day Fiancé: Before the 90 Days,2017,N/A,6.7,14
+The Odd Couple,2015,7+,7.9,66
+Pinky and the Brain,1995,all,7.9,42
+Time Tunnel,1966,all,7.6,30
+Toradora!,2008,16+,8.2,25
+No Game  No Life,2014,16+,7.9,12
+Rise,2018,16+,6,10
+History's Strongest Disciple Kenichi,2006,16+,8.2,50
+My So-Called Life,1994,16+,8.4,19
+McLeod's Daughters,2001,16+,7.2,224
+Yukon Men,2012,7+,7.2,9
+The Carmichael Show,2015,7+,7.6,32
+A Certain Scientific Railgun,2009,16+,7.7,48
+Land of the Giants,1968,7+,7.1,51
+Dies Irae,2017,18+,5.3,18
+X Company,2015,16+,7.6,8
+Little Women: Atlanta,2016,16+,5.6,64
+Guidance,2015,N/A,6.2,17
+Beck,1997,N/A,7.4,24
+Robin Hood,2006,16+,7.5,39
+Roots,2016,16+,7.9,4
+Hangin' with Mr. Cooper,1992,7+,6.4,101
+Stan Against Evil,2016,18+,7.2,16
+Little Mosque on the Prairie,2007,7+,5.8,90
+New Amsterdam,2008,16+,7.5,1
+Camelot,2011,18+,6.5,10
+Commander in Chief,2005,7+,6.8,18
+Ben 10: Omniverse,2012,7+,5.9,120
+Himouto! Umaru-chan,2015,16+,7.2,12
+The Pet Girl of Sakurasou,2012,16+,7.9,24
+Dual Survival,2010,16+,7.6,38
+TRIGUN,1998,7+,8.3,26
+Ally McBeal,1997,16+,6.8,111
+Unusual Suspects,2010,16+,7.7,39
+The Greatest American Hero,1981,7+,7.4,4
+Legit,2013,18+,8.2,26
+American Ninja Warrior,2009,7+,6.9,24
+The Chi,2018,18+,7.4,1
+Ergo Proxy,2007,16+,8,23
+Miranda,2009,7+,8.1,20
+Sanjay and Craig,2013,7+,4.5,60
+Pitch,2016,16+,7.4,10
+DARLING in the FRANXX,2018,16+,7.4,23
+Love Island,2015,N/A,4.9,184
+Beat Bobby Flay,2014,all,6.1,57
+Is This a Zombie?,2011,16+,7.3,22
+Fate/stay night [Unlimited Blade Works],2014,18+,8.1,24
+Disappeared,2010,16+,8.1,40
+The Marvelous Misadventures of Flapjack,2008,7+,7.9,46
+Time After Time,2017,16+,6.8,1
+Spy,2011,7+,8,17
+Dog With a Blog,2012,all,4.7,77
+Horace and Pete,2016,18+,8.6,10
+School of Rock,2016,all,4.5,45

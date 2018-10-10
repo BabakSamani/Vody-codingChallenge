@@ -49,7 +49,7 @@ class Media(dict):
             if key is None and value is None:
                 return dumps(collection.find_one({"_id": ObjectId(_id)}))
 
-            if (_id is not None) and (key is not None and value is not None):
+            if (_id is not None) and (key is not None) and (value is not None):
                 return dumps(collection.find({"$and": [{"_id": ObjectId(_id)}, {key: value}]}))
 
         except Exception as error:
@@ -112,8 +112,8 @@ class Media(dict):
         logger.Info("Update result: ", updatedMovie)
 
         # Get all the media records where the type is "movie"
-        # movies = Media.retrieve(_id=None, key='media type', value='movie')
-        # logger.Info("Retrieve movies by media type: ", movies)
+        movies = Media.retrieve(_id=None, key='media type', value='movie')
+        logger.Info("Retrieve movies by media type: ", movies)
 
-        movie_2 = Media.retrieve(_id="5bbd68b960e7e317c45e21a3", key='media type', value='movie')
+        movie_2 = Media.retrieve(_id="5bbd68b960e7e317c45e21a3", key="media type", value='movie')
         logger.Info("Retrieve a movie by id and media type: ", movie_2)
