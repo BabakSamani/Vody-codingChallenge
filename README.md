@@ -1,3 +1,6 @@
+First setup the environment by installing required python3 packages by running the following command:
+
+``` bash install.sh```
 
 The RESTful API:
 
