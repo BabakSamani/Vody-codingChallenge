@@ -1,9 +1,9 @@
 #!/usr/bin/python
+import json
 import settings
 from bson import ObjectId
 from Logger import Logger
 from database import MongoDB
-from bson.json_util import dumps
 
 DATABASE = settings.database
 COLLECTION = settings.collection
@@ -45,12 +45,24 @@ class Media(dict):
                 result = []
                 for movie in movies:
                     result.append(movie)
-                return result
+
+                if len(result) == 1:
+                    return JSONEncoder().encode(result[0])
+                elif len(result) > 1:
+                    ms = []
+                    for r in result:
+                        ms.append(JSONEncoder().encode(r))
+                    return ms
+                else:
+                    return []
+
             if key is None and value is None:
-                return dumps(collection.find_one({"_id": ObjectId(_id)}))
+                m = collection.find_one({"_id": ObjectId(_id)})
+                return JSONEncoder().encode(m)
 
             if (_id is not None) and (key is not None) and (value is not None):
-                return dumps(collection.find({"$and": [{"_id": ObjectId(_id)}, {key: value}]}))
+                m = collection.find_one({"$and": [{"_id": ObjectId(_id)}, {key: value}]})
+                return JSONEncoder().encode(m)
 
         except Exception as error:
             logger.Error("Error in Media class, retrieve function: ", str(error))
@@ -117,3 +129,10 @@ class Media(dict):
 
         movie_2 = Media.retrieve(_id="5bbd68b960e7e317c45e21a3", key="media type", value='movie')
         logger.Info("Retrieve a movie by id and media type: ", movie_2)
+
+
+class JSONEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, ObjectId):
+            return str(o)
+        return json.JSONEncoder.default(self, o)
