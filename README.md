@@ -12,6 +12,6 @@ Delete	DELETE	    Delete a thing
 For this project only Read action with HTTP GET request is implemented.
 
 Test links:
-```http://127.0.0.1:5000/movie/5bbd685560e7e317c45e1c87```
-```http://127.0.0.1:5000/search/query=100%20Men```
-```http://127.0.0.1:5000/search/query=release%20year:2013```
+``http://127.0.0.1:5000/movie/5bbd685560e7e317c45e1c87``
+``http://127.0.0.1:5000/search/query=100%20Men``
+``http://127.0.0.1:5000/search/query=release%20year:2013``
