@@ -1,6 +1,8 @@
 from Models import Media
+from dataFile import Data
 
 
-Media.test()
-
+# Media.testMoviesDB()
+# Media.testShowsDB()
+Data.test_getDataFromAPI()
 

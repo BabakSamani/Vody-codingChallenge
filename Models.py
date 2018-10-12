@@ -100,19 +100,19 @@ class Media(dict):
         MongoDB.closeConnection(client)
 
     @staticmethod
-    def test():
+    def testMoviesDB():
         m = {
             "media type": "movie",
-            "title": "test_1",
+            "title": "test_movie",
             "release year": "2020",
             "duration": "0 min",
             "genre": "Documentary",
-            "synopsis": "test_1 description"
+            "synopsis": "test_movie description"
         }
 
-        movie = Media(m)
+        test_movie = Media(m)
         logger.Info("Creating new media model with this movie: ", m)
-        id = Media.store(movie)
+        id = Media.store(test_movie)
         logger.Info("This movie object was just stored in the document: ", id)
 
         retrievedMovie = Media.retrieve(_id=id, key=None, value=None)
@@ -129,6 +129,23 @@ class Media(dict):
 
         movie_2 = Media.retrieve(_id="5bbd68b960e7e317c45e21a3", key="media type", value='movie')
         logger.Info("Retrieve a movie by id and media type: ", movie_2)
+
+    @staticmethod
+    def testShowsDB():
+        s = {
+            "media type": "show",
+            "title": "test_show",
+            "release year": "2020",
+            "duration": "0 min",
+            "genre": "Animation",
+            "episodes": "0",
+            "synopsis": "test_show description"
+        }
+
+        test_show = Media(s)
+        logger.Info("Creating new media model with this show: ", s)
+        id = Media.store(test_show)
+        logger.Info("This show object was just stored in the document: ", id)
 
 
 class JSONEncoder(json.JSONEncoder):
