@@ -12,7 +12,9 @@ port = os.getenv('MONGO_DB_PORT')
 database = os.getenv('MONGO_DB_NAME')
 collection = os.getenv('MONGO_COLLECTION')
 
-api = os.getenv('API_KEY')
+# API URLs with two different keys
+api_url_1 = os.getenv('MEDIA_API_URL_1')
+api_url_2 = os.getenv('MEDIA_API_URL_2')
 
 # Server configuration
 server_ip = os.getenv('HOST_IP')

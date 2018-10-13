@@ -5,17 +5,25 @@ import requests
 from Logger import Logger
 
 logger = Logger()
-apikey = settings.api
+API_URL = [settings.api_url_1, settings.api_url_2]
 
 
 class Data(object):
     def __init__(self):
         pass
 
+    num_of_calls = 1
+
     @staticmethod
     def getMediaData(media_type, title):
+        if Data.num_of_calls <= 1000:
+            api_url = API_URL[0]
+            Data.num_of_calls += 1
+        else:
+            api_url = API_URL[1]
+            Data.num_of_calls += 1
         try:
-            url = 'http://www.omdbapi.com/?apikey=' + apikey + '&t=' + title
+            url = api_url + title
             r = requests.get(url)
             content = r.json()
             if content['Title'] != 'Title':
@@ -35,7 +43,8 @@ class Data(object):
                     show = {
                         'media type': 'show',
                         'title': content['Title'],
-                        'release year': content['Year'],
+                        'year': content['Year'],
+                        'released': content['Released'],
                         'duration': content['Runtime'],
                         'genre': content['Genre'],
                         'episodes': content['totalSeasons'],
@@ -76,13 +85,12 @@ class Data(object):
 
     @staticmethod
     def test_getDataFromAPI():
-        apikey = '9eca5109'
         media_list = ["The L Word", "Midnight Texas", "The Twilight Zone", "Ben 10",
                       "Marvel's Runaways", "Everwood", "X-Men", "The Exorcist", "Dollhouse",
                       "Don't Trust the B---- in Apartment 23", "Full Metal Panic!"]
 
         for title in media_list:
-            url = 'http://www.omdbapi.com/?apikey=' + apikey + '&t=' + title
+            url = API_URL[1] + title
             r = requests.get(url)
             content = r.json()
             logger.Info("Received media:", content)
