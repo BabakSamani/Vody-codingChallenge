@@ -15,13 +15,16 @@ class Media(dict):
     """
     A Media model that creates movie/show type document on mongodb
     """
-
     def __init__(self, dict):
-        super().__init__(dict)
+        pass
 
-    __getattr__ = dict.__getitem__
-    __delattr__ = dict.__delitem__
-    __setattr__ = dict.__setitem__
+
+    # def __init__(self, dict):
+    #     super().__init__(dict)
+    #
+    # __getattr__ = dict.__getitem__
+    # __delattr__ = dict.__delitem__
+    # __setattr__ = dict.__setitem__
 
     def store(self):
         client = MongoDB.setupConnection()
@@ -39,12 +42,15 @@ class Media(dict):
         client = MongoDB.setupConnection()
         try:
             db = client[DATABASE]
+            logger.Info("Retrieved database: ", str(db))
             collection = db[COLLECTION]
+            logger.Info("Retrieved collection: ", str(collection))
             if _id is None:
-                movies = collection.find({key: value})
+                medias = collection.find({key: value})
                 result = []
-                for movie in movies:
-                    result.append(movie)
+                for film in medias:
+                    logger.Info("Retrieved media: ", str(JSONEncoder().encode(film)))
+                    result.append(film)
 
                 if len(result) == 1:
                     return JSONEncoder().encode(result[0])
