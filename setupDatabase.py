@@ -11,7 +11,7 @@ def setupDatabase():
     movies = Data.getMoviesList()
     shows = Data.getShowsList()
 
-    # Setting up movies database
+    # Storing movies documents on the database
     for i in range(1, len(movies)):
         m = Data.getMediaData(media_type='movie', title=movies[i])
         try:
@@ -20,7 +20,7 @@ def setupDatabase():
         except Exception as error:
             logger.Error("Error in setting up movies database: ", str(error))
 
-    # Setting up shows database
+    # Storing shows documents on the database
     for i in range(1, len(shows)):
         s = Data.getMediaData(media_type='show', title=shows[i])
         try:
@@ -30,9 +30,5 @@ def setupDatabase():
             logger.Error("Error in setting up shows database: ", str(error))
 
 
-def main():
-    setupDatabase()
-
-
 if __name__ == "__main__":
-    main()
+    setupDatabase()

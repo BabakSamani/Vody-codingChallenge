@@ -21,22 +21,26 @@ logger = Logger()
 @app.route('/', methods=['GET'])
 @app.route('/api/', methods=['GET'])
 def mainRoute():
+    """ A router function with GET method request for loading the landing page of the API."""
     try:
-        print(request.path)
         return render_template('index.html', title="Home|API")
-        # return jsonify({'Error': "Sorry, Neither is an authenticated user, nor a valid key is entered!"})
     except Exception as error:
-        logger.Error("Error in server mainRuote", str(error))
+        logger.Error("Error in server mainRuote: ", str(error))
 
 
 @app.route('/api/<media_type>/all', methods=['GET'])
 def getAllMediaByType(media_type):
-    r = Media.retrieve(_id=None, key='media type', value=media_type)
-    return jsonify(r)
+    """ A router function with GET request for retrieving all media based on the type, show or movie."""
+    try:
+        r = Media.retrieve(_id=None, key='media type', value=media_type)
+        return jsonify(r)
+    except Exception as error:
+        logger.Error("Error in server getAllMediaType: ", str(error))
 
 
 @app.route('/api/<media_type>/<movie_id>', methods=['GET'])
 def getMediaByID(media_type, movie_id):
+    """ A GET method request router for retrieving a media by its id and type, show or movie."""
     result = json.loads(Media.retrieve(_id=movie_id, key='media type', value=media_type))
     if result:
         return jsonify(result)

@@ -8,6 +8,7 @@ from database import MongoDB
 DATABASE = settings.database
 COLLECTION = settings.collection
 
+# Create an instance of logger class
 logger = Logger()
 
 
@@ -16,6 +17,7 @@ class Media(dict):
     A Media model that creates movie/show type document on mongodb
     """
     def __init__(self, dict):
+        """ Class instructor """
         pass
 
 
@@ -27,6 +29,7 @@ class Media(dict):
     # __setattr__ = dict.__setitem__
 
     def store(self):
+        """ A function in this class to store a media, a movie or a show into the database """
         client = MongoDB.setupConnection()
         try:
             db = client[DATABASE]
@@ -39,6 +42,9 @@ class Media(dict):
 
     @staticmethod
     def retrieve(_id, key, value):
+        """ A function to retrieve a media, a movie or a show, using the media id or an attribute of the media or both
+        , id and an attribute. For the attribute of a media, a key and its value needs to be defined, like
+        'release year' as key and '2013' as its value."""
         client = MongoDB.setupConnection()
         try:
             db = client[DATABASE]
@@ -77,6 +83,8 @@ class Media(dict):
 
     @staticmethod
     def reload(_id, key, value):
+        """ A function to update a media based on its id. Attribute of the media as key and value of the attribute as
+         value will be passed to this function as its arguments as well as media id."""
         global movie
         client = MongoDB.setupConnection()
         db = client[DATABASE]
@@ -98,15 +106,24 @@ class Media(dict):
 
     @staticmethod
     def remove(_id):
+        """ A function for removing a media from the database using its id."""
         client = MongoDB.setupConnection()
         db = client[DATABASE]
         collection = db[COLLECTION]
-        if _id:
-            return collection.remove({"_id": ObjectId(_id)})
-        MongoDB.closeConnection(client)
+        try:
+            if _id:
+                return collection.remove({"_id": ObjectId(_id)})
+        except Exception as error:
+            logger.Error("Error in Media class, remove function: ", str(error))
+        finally:
+            MongoDB.closeConnection(client)
 
     @staticmethod
     def testMoviesDB():
+        """ This test function is created to test the Media class for movie documents in the database independently
+        and find possible error and bugs in this class. It can be called by test.py python file which can be
+        run separately."""
+
         m = {
             "media type": "movie",
             "title": "test_movie",
@@ -138,6 +155,10 @@ class Media(dict):
 
     @staticmethod
     def testShowsDB():
+        """ This test function is created to test the Media class for show documents in the database independently
+                and find possible error and bugs in this class. It can be called by test.py python file which can be
+                run separately."""
+
         s = {
             "media type": "show",
             "title": "test_show",
@@ -155,6 +176,7 @@ class Media(dict):
 
 
 class JSONEncoder(json.JSONEncoder):
+    """ This class is created for converting the Mongodb document objects to json objects. """
     def default(self, o):
         if isinstance(o, ObjectId):
             return str(o)

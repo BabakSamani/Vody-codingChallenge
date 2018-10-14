@@ -17,25 +17,202 @@
             <h1>Welcome to Media API</h1>
             <hr>
             <h3> Instructions: </h3>
-
+            <p style="font-size: 14px;">
+                The following is the instruction for using this API and helps you how to search for a media, a movie or
+                a show in this API.
+            </p>
             <div class="panel panel-default">
-                <div class="panel-heading">Panel heading without title</div>
-                  <div class="panel-body">
-                    Panel content
-                  </div>
+                <div class="panel-heading">
+                    <h3 class="panel-title">GET:&nbsp; /api/movie/${id}</h3>
+                </div>
+                <div class="panel-body">
+                  <h4> Description: </h4>
+                  <p style="font-size: 14px;">
+                    Returns a JSON data of a movie type media based on the movie id and it contains queryable parameters.
+                  </p>
+                  <h4> Request: </h4>
+                  <p style="font-size: 14px;">
+                      http://142.93.195.130:5000/api/movie/5bbfd7fd60e7e379d49010e6
+                  </p>
+                   <h4> Respond: </h4>
+                  <code>
+                    {
+                      "_id": "5bbfefea60e7e31fed1f386d",
+                      "duration": "22 min",
+                      "episodes": "30",
+                      "genre": "Animation, Comedy",
+                      "media type": "show",
+                      "release year": "1989-2013",
+                      "synopsis": "The satiric adventures of a working-class family in the misfit city of Springfield.",
+                      "title": "The Simpsons"
+                    }
+                  </code>
+                </div>
             </div>
 
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h3 class="panel-title">Panel title</h3>
+                <h3 class="panel-title">GET:&nbsp; /api/show/${id}</h3>
               </div>
               <div class="panel-body">
-                Panel content
+                  <h4> Description: </h4>
+                  <p style="font-size: 14px;">
+                    Returns a JSON data of a show type media based on the show id and it contains queryable parameters.
+                  </p>
+                  <h4> Request: </h4>
+                  <p style="font-size: 14px;">
+                    http://142.93.195.130:5000/api/show/5bbfefea60e7e31fed1f386d
+                  </p>
+                  <h4> Respond: </h4>
+                  <code>
+                    {
+                      "_id": "5bbfefea60e7e31fed1f386d",
+                      "duration": "22 min",
+                      "episodes": "30",
+                      "genre": "Animation, Comedy",
+                      "media type": "show",
+                      "release year": "1989-2013",
+                      "synopsis": "The satiric adventures of a working-class family in the misfit city of Springfield.",
+                      "title": "The Simpsons"
+                    }
+                  </code>
+
               </div>
             </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">GET:&nbsp; /api/search/query=${title}</h3>
+              </div>
+              <div class="panel-body">
+                  <h4> Description: </h4>
+                  <p style="font-size: 14px;">
+                    Returns a JSON data of a media, show or movie, based on the title of the media and it contains queryable parameters.
+                  </p>
+                  <h4> Request: </h4>
+                  <p style="font-size: 14px;">
+                    http://142.93.195.130:5000/api/search/query=1 Night
+                  </p>
+                  <h4> Respond: </h4>
+                  <code>
+                    {
+                      "_id": "5bbfd7fe60e7e379d49010f4",
+                      "duration": "80 min",
+                      "genre": "Drama, Romance",
+                      "media type": "movie",
+                      "release year": "2016",
+                      "synopsis": "Past and present collide when two couples explore love over the course of one night at a hotel.",
+                      "title": "1 Night"
+                    }
+                  </code>
+
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">GET:&nbsp; /api/search/key=${key}&value=${value}</h3>
+              </div>
+              <div class="panel-body">
+                  <h4> Description: </h4>
+                  <p style="font-size: 14px;">
+                    Returns a JSON data of a medias, shows or movies, based on passing any attribute of the media and its
+                      value. The respond contains queryable parameters.
+                  </p>
+                  <h4> Request: </h4>
+                  <p style="font-size: 14px;">
+                    http://142.93.195.130:5000/api/search/key=title&value=1920 London
+                  </p>
+                  <h4> Respond: </h4>
+                  <code>
+                    {"_id": "5bbfd80060e7e379d490110c", "media type": "movie", "title": "1920 London", "release year": "2016", "duration": "120 min", "genre": "Horror, Mystery", "synopsis": "After her husband is possessed by an evil spirit, a woman turns to her former lover to perform an exorcism."}
+
+                  </code>
+                  <h4> Request: </h4>
+                  <p style="font-size: 14px;">
+                    http://142.93.195.130:5000/api/search/key=release year&value=2016
+                  </p>
+                  <h4> Respond: </h4>
+                  <code>
+                    [
+                      {"_id": "5bbfd7fd60e7e379d49010e6", "media type": "movie", "title": "#Rucker50", "release year": "2016", "duration": "56 min", "genre": "Documentary", "synopsis": "N/A"},
+                      {"_id": "5bbfd7fe60e7e379d49010f4", "media type": "movie", "title": "1 Night", "release year": "2016", "duration": "80 min", "genre": "Drama, Romance", "synopsis": "Past and present collide when two couples explore love over the course of one night at a hotel."},
+                      {"_id": "5bbfd7ff60e7e379d4901106", "media type": "movie", "title": "13 Demons", "release year": "2016", "duration": "80 min", "genre": "Thriller", "synopsis": "Gary, and his friends who are into gaming, renaissance fairs and various unsavory vices, stumble across a rare, medieval board game called \"13 Demons.\" They discover the game has a dark ..."},
+                      {"_id": "5bbfd80060e7e379d4901108", "media type": "movie", "title": "13th", "release year": "2016", "duration": "100 min", "genre": "Documentary, Crime, History", "synopsis": "An in-depth look at the prison system in the United States and how it reveals the nation's history of racial inequality."},
+                      {"_id": "5bbfd80060e7e379d490110c", "media type": "movie", "title": "1920 London", "release year": "2016", "duration": "120 min", "genre": "Horror, Mystery", "synopsis": "After her husband is possessed by an evil spirit, a woman turns to her former lover to perform an exorcism."},
+                      {"_id": "5bbfd80160e7e379d4901116", "media type": "movie", "title": "2307: Winter's Dream", "release year": "2016", "duration": "101 min", "genre": "Sci-Fi", "synopsis": "In 2307, a soldier is sent on a mission to hunt down the leader of the humanoid rebellion."},
+                      {"_id": "5bbfd80160e7e379d490111a", "media type": "movie", "title": "25 Kille", "release year": "2016", "duration": "141 min", "genre": "Comedy, Drama", "synopsis": "Four brothers receive news of an inheritance and must contend with an unscrupulous landowner to receive their birthright."},
+                      {"_id": "5bbfd80560e7e379d4901148", "media type": "movie", "title": "7 A\\u00f1os", "release year": "2016", "duration": "77 min", "genre": "Drama", "synopsis": "Four friends face an agonizing decision. One must go to prison. The other three must make the sacrifice worthwhile."},
+                      {"_id": "5bbfd80560e7e379d490114a", "media type": "movie", "title": "7:19", "release year": "2016", "duration": "94 min", "genre": "Drama, History", "synopsis": "It was 7:19 am when Mexico City was hit by the most devastating earthquake in the history of that country. In \"7:19\", a handful of survivors from different social classes try to stay alive while they wait to be rescued."}...
+                    ]
+                  </code>
+
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">GET:&nbsp; /api/movie/all</h3>
+              </div>
+              <div class="panel-body">
+                  <h4> Description: </h4>
+                  <p style="font-size: 14px;">
+                      Returns all movies in JSON format data that contains queryable parameters.
+                  </p>
+                  <h4> Request: </h4>
+                  <p style="font-size: 14px;">
+                      http://142.93.195.130:5000/api/movie/all
+                  </p>
+                  <h4> Respond: </h4>
+                  <code>
+                    [
+                      {"_id": "5bbfd7fd60e7e379d49010e6", "media type": "movie", "title": "#Rucker50", "release year": "2016", "duration": "56 min", "genre": "Documentary", "synopsis": "N/A"},
+                      {"_id": "5bbfd7fd60e7e379d49010e8", "media type": "movie", "title": "#REALITYHIGH", "release year": "2017", "duration": "99 min", "genre": "Comedy, Drama, Romance", "synopsis": "High-achieving high-school senior Dani Barnes dreams of getting into UC Davis, the world's top veterinary school. Then a glamorous new friend draws her into a Southern California scene that threatens everything she's worked for."},
+                      {"_id": "5bbfd7fd60e7e379d49010ea", "media type": "movie", "title": "89", "release year": "2017", "duration": "91 min", "genre": "Sport", "synopsis": "The true story of a sporting miracle, when Arsenal went to Anfield on the last day of the 1988/89 season needing to beat the best team in England by two clear goals to snatch the title."},
+                      {"_id": "5bbfd7fe60e7e379d49010ec", "media type": "movie", "title": "Til Death Do Us Part", "release year": "2011", "duration": "100 min", "genre": "Drama, Romance", "synopsis": "Set in a small Chinese village, where an illegal trade in human blood has caused the spread of HIV; two AIDS sufferers surprisingly fall in love with each other and decide to risk everything to pursue their last chance at happiness."},
+                      {"_id": "5bbfd7fe60e7e379d49010ee", "media type": "movie", "title": "(T)ERROR", "release year": "2015", "duration": "84 min", "genre": "Documentary", "synopsis": "(T)ERROR is the first documentary to place filmmakers on the ground during an active FBI counterterrorism sting operation. Through the perspective of "Shariff", a 63-year-old Black ..."},
+                      {"_id": "5bbfd7fe60e7e379d49010f0", "media type": "movie", "title": "1 Chance 2 Dance", "release year": "2014", "duration": "89 min", "genre": "Drama, Family", "synopsis": "When a seventeen-year old aspiring dancer is uprooted mid-semester of her senior year, she finds herself in a small East Coast high school where her heart will be divided between two boys, ..."},
+                      {"_id": "5bbfd7fe60e7e379d49010f2", "media type": "movie", "title": "1 Mile to You", "release year": "2017", "duration": "104 min", "genre": "Drama, Romance, Sport", "synopsis": "After a teenager's friends die in an accident, he finds running allows him to remember them perfectly. Running, however, also brings him notoriety. He is caught between keeping the past alive and making new memories in the present."},
+                      {"_id": "5bbfd7fe60e7e379d49010f4", "media type": "movie", "title": "1 Night", "release year": "2016", "duration": "80 min", "genre": "Drama, Romance", "synopsis": "Past and present collide when two couples explore love over the course of one night at a hotel."},
+                      {"_id": "5bbfd7fe60e7e379d49010f6", "media type": "movie", "title": "10 jours en or", "release year": "2012", "duration": "95 min", "genre": "Comedy, Drama", "synopsis": "Bachelor Marc Bajau travels the country on behalf of a clothing brand. He loves life on the road, free from responsibility. But when he starts a new tour to promote the latest line, a ..."},
+                      {"_id": "5bbfd7fe60e7e379d49010f8", "media type": "movie", "title": "R.F.D. 10,000 B.C.", "release year": "1916", "duration": "10 min", "genre": "Animation, Short, Romance", "synopsis": "Two prehistoric suitors, one a mailman, compete for the affections of a prehistoric maiden and a dinosaur.""}, ...
+                    ]
+                  </code>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">GET:&nbsp; /api/show/all</h3>
+              </div>
+              <div class="panel-body">
+                <h4> Description: </h4>
+                  <p style="font-size: 14px;">
+                      Returns all shows in JSON format data that contains queryable parameters.
+                  </p>
+                  <h4> Request: </h4>
+                  <p style="font-size: 14px;">
+                      http://142.93.195.130:5000/api/show/all
+                  </p>
+                  <h4> Respond: </h4>
+                  <code>
+                    [
+                      {"_id": "5bbfefea60e7e31fed1f386d", "media type": "show", "title": "The Simpsons", "release year": "1989-2013", "duration": "22 min", "genre": "Animation, Comedy", "episodes": "30", "synopsis": "The satiric adventures of a working-class family in the misfit city of Springfield."},
+                      {"_id": "5bbfefea60e7e31fed1f386f", "media type": "show", "title": "Grey's Anatomy", "release year": "2005-2013", "duration": "41 min", "genre": "Drama, Romance", "episodes": "15", "synopsis": "A drama centered on the personal and professional lives of five surgical interns and their supervisors."},
+                      {"_id": "5bbfefea60e7e31fed1f3871", "media type": "show", "title": "Family Guy", "release year": "1998-2013", "duration": "22 min", "genre": "Animation, Comedy", "episodes": "17", "synopsis": "In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life as they are thrown from one crazy scenario to another."},
+                      {"_id": "5bbfefeb60e7e31fed1f3873", "media type": "show", "title": "Marvel's Agents of S.H.I.E.L.D.: Academy", "release year": "2016", "duration": "N/A", "genre": "Action, Sci-Fi", "episodes": "N/A", "synopsis": "New recruits enroll at S.H.I.E.L.D Academy."},
+                      {"_id": "5bbfefeb60e7e31fed1f3875", "media type": "show", "title": "American Horror Story", "release year": "2011-2013", "duration": "60 min", "genre": "Drama, Horror, Thriller", "episodes": "9", "synopsis": "An anthology series centering on different characters and locations, including a house with a murderous past, an insane asylum, a witch coven, a freak show, a hotel, a possessed farmhouse, a cult, and the apocalypse."},
+                      {"_id": "5bbfefeb60e7e31fed1f3877", "media type": "show", "title": "South Park", "release year": "1997-2013", "duration": "22 min", "genre": "Animation, Comedy", "episodes": "23", "synopsis": "Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado."},
+                      {"_id": "5bbfefeb60e7e31fed1f3879", "media type": "show", "title": "Shameless", "release year": "2011-2013", "duration": "46 min", "genre": "Comedy, Drama", "episodes": "9", "synopsis": "An alcoholic man lives in a perpetual stupor while his six children cope as best they can."},
+                      {"_id": "5bbfefeb60e7e31fed1f387b", "media type": "show", "title": "Gotham", "release year": "2014-2013", "duration": "42 min", "genre": "Action, Crime, Drama", "episodes": "4", "synopsis": "The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's arrival."}...
+                    ]
+                  </code>
+              </div>
+            </div>
+
             <hr>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Get all shows</a></p>
-            <p><a class="btn btn-success btn-lg" href="#" role="button">Get all movies</a></p>
+            <p><a class="btn btn-primary btn-lg" href="http://142.93.195.130:5000/api/show/all" role="button">Get all shows</a></p>
+            <p><a class="btn btn-success btn-lg" href="http://142.93.195.130:5000/api/movie/all" role="button">Get all movies</a></p>
         </div>
     </div>
 </body>

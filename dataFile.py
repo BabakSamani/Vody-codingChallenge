@@ -5,6 +5,7 @@ import requests
 from Logger import Logger
 
 logger = Logger()
+# Get API url from settings.py and .env file
 API_URL = [settings.api_url_1, settings.api_url_2]
 
 
@@ -16,6 +17,11 @@ class Data(object):
 
     @staticmethod
     def getMediaData(media_type, title):
+        """
+        This function gets data for a movie or show from an api and returns a movie or show JSON object to store
+        on collection of documents on a Mongodb type database.
+        :returns: a JSON object
+        """
         if Data.num_of_calls <= 1000:
             api_url = API_URL[0]
             Data.num_of_calls += 1
@@ -26,7 +32,9 @@ class Data(object):
             url = api_url + title
             r = requests.get(url)
             content = r.json()
+            # if api returns a valid info for a requested media
             if content['Title'] != 'Title':
+                # Create JSON object of movie type
                 if media_type == 'movie':
                     movie = {
                         'media type': 'movie',
@@ -36,9 +44,10 @@ class Data(object):
                         'genre': content['Genre'],
                         'synopsis': content['Plot']
                     }
-
+                    # A logger to check the result
                     logger.Info("Movie:", movie)
                     return movie
+                # Create JSON object of show type
                 if media_type == 'show':
                     show = {
                         'media type': 'show',
@@ -50,7 +59,7 @@ class Data(object):
                         'episodes': content['totalSeasons'],
                         'synopsis': content['Plot']
                     }
-
+                    # A logger to check the result
                     logger.Info("Show:", show)
                     return show
 
@@ -59,6 +68,11 @@ class Data(object):
 
     @staticmethod
     def getMoviesList():
+        """
+        A function to create a list of movies from a cvs file. The csv file is located in the /data directory.
+        This function returns a list of movies in an array.
+        :returns: an array
+        """
         movies_list = []
         try:
             with open('./data/movieList.csv', 'r') as f:
@@ -72,6 +86,11 @@ class Data(object):
 
     @staticmethod
     def getShowsList():
+        """
+        A function to create a list of shows from a cvs file. The csv file is located in the /data directory.
+        This function returns a list of shows in an array.
+        :returns: an array
+        """
         shows_list = []
         try:
             with open('./data/TVshowList.csv', 'r') as f:
@@ -85,6 +104,11 @@ class Data(object):
 
     @staticmethod
     def test_getDataFromAPI():
+        """
+        A test function in this class for testing the api and see whether we can get data from api. This test can be
+        called from test.py python script.
+        :return: none
+        """
         media_list = ["The L Word", "Midnight Texas", "The Twilight Zone", "Ben 10",
                       "Marvel's Runaways", "Everwood", "X-Men", "The Exorcist", "Dollhouse",
                       "Don't Trust the B---- in Apartment 23", "Full Metal Panic!"]

@@ -1,4 +1,6 @@
 # settings.py
+# A python script to read the .env file and read the required parameters from this file to pass to other parts of the
+# application
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv

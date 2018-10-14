@@ -2,7 +2,7 @@
 import os
 import json
 import logging
-import logging.config
+import logging.config  # configuration and settings for this class
 
 
 class Logger(object):
@@ -23,28 +23,22 @@ class Logger(object):
         else:
             logging.basicConfig(level=default_level)
 
-
     @staticmethod
     def Info(class_name, msg):
         logger = logging.getLogger(class_name)
         logger.info(msg)
-
 
     @staticmethod
     def Debug(class_name, msg):
         logger = logging.getLogger(class_name)
         logger.debug(msg)
 
-
     @staticmethod
     def Warning(class_name, msg):
         logger = logging.getLogger(class_name)
         logger.warning(msg)
 
-
     @staticmethod
     def Error(class_name, msg):
         logger = logging.getLogger(class_name)
         logger.error(msg)
-
-
