@@ -1,10 +1,12 @@
-The RESTful API to get movie/show media type:
+A RESTful API to get movie/show media type:
+-----------------------------------------------------------------------------------------------------
 This API is written in Python and uses MongoDB as its database to store data of show or movie medias. 
 For this project only GET method of the RESTful API is implemented.
 
-Action	HTTP Verb	Description
------------------------------------------------------------------------------------------------------
 ```
+Action	HTTP Verb	Description
+_______________________________________________________________________________
+
 Read	GET         Read the information about a media or collection of medias.
  ```
  
@@ -50,11 +52,9 @@ mongorestore -d <database_name> /data/Vody/
 ```
 
 
-
-
 Test links:
 ```
-http://127.0.0.1:5000/movie/5bbd685560e7e317c45e1c87
-http://127.0.0.1:5000/search/query=100%20Men
-http://127.0.0.1:5000/search/query=release%20year:2013 
+http://142.93.195.130/movie/5bbd685560e7e317c45e1c87
+http://142.93.195.130/search/query=100%20Men
+http://142.93.195.130/search/key=release%20year&value=2013 
 ```
