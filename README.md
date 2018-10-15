@@ -55,6 +55,6 @@ mongorestore -d <database_name> /data/Vody/
 Test links:
 ```
 http://142.93.195.130/api/<user_token>/movie/5bbd685560e7e317c45e1c87
-http://142.93.195.130/api/<user_token>/search/query=100%20Men
+http://142.93.195.130/api/<user_token>/search?query=100%20Men
 http://142.93.195.130/api/<user_token>/search/key=release%20year&value=2013 
 ```
