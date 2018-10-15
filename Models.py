@@ -17,7 +17,7 @@ class Media(dict):
     """
     A Media model that creates movie/show type document on mongodb
     """
-    def __init__(self):
+    def __init__(self, dict):
         """ Class instructor """
         pass
 
