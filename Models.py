@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import json
 import settings
+import pymongo
 from bson import ObjectId
 from Logger import Logger
 from database import MongoDB
@@ -16,17 +17,9 @@ class Media(dict):
     """
     A Media model that creates movie/show type document on mongodb
     """
-    def __init__(self, dict):
+    def __init__(self):
         """ Class instructor """
         pass
-
-
-    # def __init__(self, dict):
-    #     super().__init__(dict)
-    #
-    # __getattr__ = dict.__getitem__
-    # __delattr__ = dict.__delitem__
-    # __setattr__ = dict.__setitem__
 
     def store(self):
         """ A function in this class to store a media, a movie or a show into the database """
@@ -37,6 +30,32 @@ class Media(dict):
             return collection.insert_one(self).inserted_id
         except Exception as error:
             logger.Error("Error in Media class, store function: ", str(error))
+        finally:
+            MongoDB.closeConnection(client)
+
+    @staticmethod
+    def retrieveAll(key, value, limit, offset):
+        """ A function to retrieve all media, movies or shows, using an attribute of the media such as type For the
+        attribute of a media, a key and its value needs to be defined, like 'release year' as key and '2013'
+        as its value."""
+        client = MongoDB.setupConnection()
+        try:
+            db = client[DATABASE]
+            logger.Info("Retrieved database: ", str(db))
+            collection = db[COLLECTION]
+            logger.Info("Retrieved collection: ", str(collection))
+            # Setting up pagination based on limit and offset
+            starting = collection.find({key: value}).sort('_id', pymongo.ASCENDING)
+            L_id = starting[offset]['_id']
+            medias = collection.find({"$and": [{'_id': {"$gte": L_id}}, {key: value}]}).sort('_id', pymongo.ASCENDING).limit(limit)
+            result = []
+            for media in medias:
+                result.append(JSONEncoder().encode(media))
+
+            return result
+
+        except Exception as error:
+            logger.Error("Error in Media class, retrieve function: ", str(error))
         finally:
             MongoDB.closeConnection(client)
 
@@ -52,10 +71,10 @@ class Media(dict):
             collection = db[COLLECTION]
             logger.Info("Retrieved collection: ", str(collection))
             if _id is None:
-                medias = collection.find({key: value})
+                medias = collection.find({key: value}).sort('_id', pymongo.ASCENDING)
                 result = []
                 for film in medias:
-                    logger.Info("Retrieved media: ", str(JSONEncoder().encode(film)))
+                    # logger.Info("Retrieved media: ", str(JSONEncoder().encode(film)))
                     result.append(film)
 
                 if len(result) == 1:
@@ -69,12 +88,12 @@ class Media(dict):
                     return []
 
             if key is None and value is None:
-                m = collection.find_one({"_id": ObjectId(_id)})
-                return JSONEncoder().encode(m)
+                media = collection.find_one({"_id": ObjectId(_id)})
+                return JSONEncoder().encode(media)
 
             if (_id is not None) and (key is not None) and (value is not None):
-                m = collection.find_one({"$and": [{"_id": ObjectId(_id)}, {key: value}]})
-                return JSONEncoder().encode(m)
+                media = collection.find_one({"$and": [{"_id": ObjectId(_id)}, {key: value}]})
+                return JSONEncoder().encode(media)
 
         except Exception as error:
             logger.Error("Error in Media class, retrieve function: ", str(error))

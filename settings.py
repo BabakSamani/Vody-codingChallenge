@@ -21,3 +21,6 @@ api_url_2 = os.getenv('MEDIA_API_URL_2')
 # Server configuration
 server_ip = os.getenv('HOST_IP')
 server_port = os.getenv('HOST_PORT')
+
+# User's token for using this api
+user_token = os.getenv('API_USER_TOKEN')
